@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./assets/styles/nav.css" />
-    <link rel="stylesheet" href="./assets/styles/landing.css" />
+    <link rel="stylesheet" href="assets/styles/nav.css" />
+    <link rel="stylesheet" href="assets/styles/landing.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <h2>My WEBSITE</h2>
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="product.html">Product</a></li>
-        <li><a class="nav-link" href="contact.html">Contact</a></li>
-        <li>
-          <a class="nav-link" href="cart.html"></a
-          ><i class="fa fa-shopping-bag" style="font-size: 24px"></i>
-        </li>
-        <li><a class="nav-link" href="sign-up.html">Sign Up</a></li>
-        <li><a class="nav-link" href="login.html">Login</a></li>
-      </ul>
-    </nav>
+    <div class ="container">
+      <nav class="navbar">
+        <ul>
+          <h2>My WEBSITE</h2>
+          <div class = "navi"><li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="#about-section">About</a></li>
+            <li><a class="nav-link" href="#product-section">Product</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li>
+          </div>
+            <a class="nav-link" href="cart.html"></a
+            ><i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+          </li>
+          <li><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+          <li><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <section class="title-section">
+    <section id="title-section">
       <div class="title-layout">
         <div class="heading">
           <header><h1>NIGHTLIFE</h1></header>
@@ -34,7 +37,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section id="about-section">
       <div class="about-layout">
         <div class="about-info">
           <h3>About Us</h3>
@@ -57,7 +60,7 @@
       </div>
     </section>
 
-    <section class="why-section">
+    <section id="why-section">
       <div class="why-layout">
         <img class="about-pic" src="./assets/images/landing-men-image.jpg" />
         <div class="about-info2">
@@ -77,7 +80,7 @@
       </div>
     </section>
 
-    <section class="product-section">
+    <section id="product-section">
       <div class="product-layout">
         <a href="w-items.html"
           ><img
@@ -93,7 +96,7 @@
       </div>
     </section>
 
-    <section class="popular-section">
+    <section id="popular-section">
       <div class="popular-layout">
         <h3>Popular Product</h3>
         <div class="popular-female-product">
@@ -113,19 +116,35 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-layout">
-        <h3>My website</h3>
-        <div class="border-icon">
-          
-        </div>
-        <div class="footer-navbar">
-          <ul>
-            <li><a class = "footer-links href="women_items.html">Women</a></li>
-            <li><a href="men_items.html">Men</a></li>
-          </ul>
-        </div>
+      <table class="footer-layout">
+        <tr>
+          <th><h3>My website</h3></th>
+          <th><h3>Shop</h3></th>
+          <th><h3>Information</h3></th>
+        </tr>
 
-      </div>
+        <tr>
+          <td><a class="footer-links" href="women_items.html">Women</a></td>
+        </tr>
+        <tr>
+          <td><a class="footer-links" href="men_items.html">Men</a></td>
+        </tr>
+        <tr>
+          <td><a class="footer-links" href="about-section">About Us</a></td>
+        </tr>
+        <tr>
+          <td><a class="footer-links" href="contact.html">Contact Us</a></td>
+        </tr>
+        <tr>
+          <td><a class="footer-links" href="cart.html">cart</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="footer-links" href="popular-section">Popular Product</a>
+          </td>
+        </tr>
+        <div class="footer-navbar"></div>
+      </table>
     </footer>
   </body>
 </html>

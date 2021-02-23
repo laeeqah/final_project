@@ -1,24 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0px;
   margin: 0px;
 }
-
+.container {
+  height: 100%;
+  width: 100%;
+}
 .navbar {
   background: #353332;
-
+  position: fixed;
+  width: 100%;
 }
 
+.navi {
+  display: flex;
+  margin-left: 155px;
+  margin-left: 70px;
+}
 .nav-link {
   display: inline;
   list-style-type: none;
   text-decoration-line: none;
+  text-transform: uppercase;
 }
 
-ul {
+.navbar ul {
   display: flex;
   list-style-type: none;
-  padding-inline: 30px;
   padding: 15px;
+  justify-content: center;
 }
 
 li {
@@ -26,8 +40,44 @@ li {
 }
 
 .nav-link,
-.fa-shopping-bag {
+.fa {
   text-decoration-line: none;
   color: white;
-  padding-inline: 11px
+}
+
+.navbar a:hover {
+  color: #c5c5c5;
+  opacity: 1;
+}
+
+/* footer */
+
+.footer {
+  background-color: #353332;
+  position: relative;
+  bottom: 0px;
+}
+
+.footer-layout {
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.footer-layout th {
+  display: inline-flex;
+  padding-inline: 160px;
+}
+
+.footerlayout tr {
+  display: flex;
+  padding-inline: 46%;
+}
+
+.footer-group-links,
+.footer-info {
+  display: inline;
+}
+
+.footer-links {
+  margin: 0px 0px 0px 0px;
 }
