@@ -5,15 +5,12 @@ html {
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
-.container {
-  height: 100%;
-  width: 100%;
-}
+
 .navbar {
   background: #353332;
   position: fixed;
-  width: 100%;
 }
 
 .navi {

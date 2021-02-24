@@ -5,6 +5,7 @@ html {
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,8 +39,9 @@ body {
 }
 .heading {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 290px;
   margin-bottom: 100px;
+  display: block;
 }
 .about-layout {
   display: flex;

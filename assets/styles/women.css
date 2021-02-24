@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.women-container {
+  position: sticky;
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+.women-list img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
