@@ -15,6 +15,7 @@ html {
 
 .navbar {
   position: fixed;
+  background-color: #a47410;
 }
 
 .navi {
@@ -37,7 +38,7 @@ html {
 }
 
 li {
-  margin-inline: 35px;
+  margin-inline: 26px;
 }
 
 .nav-link,

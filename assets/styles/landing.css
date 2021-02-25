@@ -20,8 +20,7 @@ body {
 }
 .title-layout {
   height: 100vh;
-  width: 100%;
-  min-width: 100%;
+  width: 100vw;
   background-size: cover;
   animation: backgroundChanger 5s infinite;
 }
@@ -39,8 +38,8 @@ body {
 }
 .heading {
   text-align: center;
-  margin-top: 290px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   display: block;
 }
 .about-layout {
