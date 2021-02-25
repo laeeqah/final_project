@@ -12,8 +12,8 @@ html {
   position: fixed;
   top: 0px;
 }
+
 .navbar {
-  background: #353332;
   position: fixed;
 }
 
@@ -43,7 +43,7 @@ li {
 .nav-link,
 .fa {
   text-decoration-line: none;
-  color: white;
+  color: black;
 }
 
 .navbar a:hover {
