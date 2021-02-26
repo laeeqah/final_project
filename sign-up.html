@@ -6,7 +6,7 @@
     <title>signup</title>
   </head>
   <body>
-    <form action="http://127.0.0.1:5000/add-record/" method="POST">
+    <form onsubmit="event.preventDefault(); createUsers();" id="signup-form">
       <h3>Sign up and join the family</h3>
       <br />
       <input placeholder="Fullname" type="text" name="fullname" /><br />
@@ -21,5 +21,6 @@
       <input placeholder="password" type="password" name="password" /><br />
       <input type="submit" value="submit" /><br />
     </form>
+    <script src="assets/scripts/sign_up.js"></script>
   </body>
 </html>
