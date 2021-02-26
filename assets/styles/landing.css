@@ -14,11 +14,11 @@ body {
   line-height: 1.6;
 }
 
-#title-section {
+#heading {
   display: flex;
   object-fit: cover;
 }
-.title-layout {
+#heading {
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -28,6 +28,7 @@ body {
 @keyframes backgroundChanger {
   0% {
     background-image: url("../images/high-fashion-landing-background.jpg");
+    object-fit: cover;
   }
   50% {
     background-image: url("../images/pexels-andrea-piacquadio-842811.jpg");
@@ -36,50 +37,46 @@ body {
     background-image: url("../images/pexels-sharkbite-2686043.jpg");
   }
 }
-.heading {
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  display: block;
-}
-.about-layout {
+
+.text {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-#about-section {
-  margin: 30px 100px 0px 100px;
-}
-
-#why-section {
-  margin: 30px 100px 0px 100px;
-}
-
-.why-layout {
+#layout {
   display: flex;
 }
 
 .about-pic {
-  width: 20%;
-  height: 50%;
-  object-fit: contain;
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
   padding-inline: 35px;
 }
 
 /* Product Section */
 
-#product-section {
-  display: flex;
-  background-color: #353332;
-  margin: 30px 100px 0px 100px;
+.products img {
+  width: 48vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
+#product-section {
+  display: flex;
+  background-color: #323332;
+}
+/*
 .products-link {
   width: 48%;
   margin: 8px;
-}
+} */
 
 /* Popular section */
-#popular-section {
+/* #popular-section {
   margin: 30px 0px 0px 0px;
 }
 .popular-female-product,
@@ -96,4 +93,4 @@ body {
 }
 .popular {
   width: 20%;
-}
+} */
