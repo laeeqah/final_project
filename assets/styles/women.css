@@ -125,6 +125,7 @@ img {
 .women-list ul {
   display: flex;
   list-style: none;
+  justify-content: space-evenly;
 }
 
 .women-info img {

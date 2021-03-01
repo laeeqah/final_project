@@ -10,9 +10,10 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
+  background-color: #323332;
   line-height: 1.6;
 }
+
 
 #heading {
   display: flex;
@@ -31,10 +32,10 @@ body {
     object-fit: cover;
   }
   50% {
-    background-image: url("../images/pexels-andrea-piacquadio-842811.jpg");
+    background-image: url("../images/landing-slider.jpg");
   }
   100% {
-    background-image: url("../images/pexels-sharkbite-2686043.jpg");
+    background-image: url("../images/landing-slider2.jpg");
   }
 }
 
@@ -50,8 +51,18 @@ body {
   display: flex;
 }
 
+.about-info{
+  padding-inline: 20px;
+}
+.about-info h3{
+  color: #A47410;
+}
+
+.about-info p{
+  color:white;
+}
 .about-pic {
-  width: 50%;
+  width: 30%;
   height: 60%;
   object-fit: cover;
   padding-inline: 35px;
@@ -67,30 +78,7 @@ body {
 
 #product-section {
   display: flex;
-  background-color: #323332;
-}
-/*
-.products-link {
-  width: 48%;
-  margin: 8px;
-} */
-
-/* Popular section */
-/* #popular-section {
-  margin: 30px 0px 0px 0px;
-}
-.popular-female-product,
-.popular-male-product {
-  background-color: #353332;
-  color: white;
+  
 }
 
-.popular-female-product h4,
-.popular-male-product h4 {
-  text-align: center;
-  padding: 16px;
-  margin-bottom: 15px;
-}
-.popular {
-  width: 20%;
-} */
+

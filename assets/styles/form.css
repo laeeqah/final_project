@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+  max-width: none;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+
+.signup-form h3{
+    color: white;
+    text-align: center;
+}
+.signup-form{
+    border-left: #c5c5c5 solid 10px;
+    border-right: #c5c5c5 solid 10px;
+    background-color: #323332;
+    padding: 40px;
+}
+
+.sign-info input{
+    padding: 30px;
+    width: 100%;
+
+}
+
+.submit-btn{
+    padding: 10px;
+    display: inline-flex;
+    margin-inline: 38px;
+
+}
+
+.submit-btn input:hover{
+    background-color: #A47410;
+}
+.submit-btn input{
+    padding: 10px;
+}
+
+/* LOGIN */
+.login-form h3{
+    color: white;
+    text-align: center;
+}
+.login-form{
+    border-left: #c5c5c5 solid 10px;
+    border-right: #c5c5c5 solid 10px;
+    background-color: #323332;
+    padding: 40px;
+}
+
+.login-info input{
+    padding: 30px;
+    width: 100%;
+
+}
+
+.submit-btn{
+    padding: 10px;
+    display: inline-flex;
+    margin-inline: 38px;
+
+}
+
+.submit-btn input:hover{
+    background-color: #A47410;
+}
+.submit-btn input{
+    padding: 10px;
+}
+
+/* Contact page */
+
+.contact-form h3{
+    color: white;
+    text-align: center;
+}
+.contact-form{
+    border-left: #c5c5c5 solid 10px;
+    border-right: #c5c5c5 solid 10px;
+    background-color: #323332;
+    padding: 40px;
+}
+
+.contact-info input{
+    padding: 30px;
+    width: 100%;
+
+}
+
+.contact-btn{
+    padding: 10px;
+    display: inline-flex;
+    margin-inline: 38px;
+
+}
+
+.contact-btn input:hover{
+    background-color: #A47410;
+}
+.contact-btn input{
+    padding: 10px;
+}
