@@ -1,9 +1,8 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-
 
 .container {
   max-width: none;
@@ -12,99 +11,99 @@
   justify-content: center;
 }
 
-
-.signup-form h3{
-    color: white;
-    text-align: center;
+.signup-form h3 {
+  color: white;
+  text-align: center;
 }
-.signup-form{
-    border-left: #c5c5c5 solid 10px;
-    border-right: #c5c5c5 solid 10px;
-    background-color: #323332;
-    padding: 40px;
-}
-
-.sign-info input{
-    padding: 30px;
-    width: 100%;
-
+.signup-form {
+  border-left: #c5c5c5 solid 10px;
+  border-right: #c5c5c5 solid 10px;
+  background-color: #323332;
+  padding: 40px;
 }
 
-.submit-btn{
-    padding: 10px;
-    display: inline-flex;
-    margin-inline: 38px;
-
+.sign-info input {
+  padding: 30px;
+  width: 100%;
 }
 
-.submit-btn input:hover{
-    background-color: #A47410;
+.submit-btn {
+  padding: 10px;
+  display: inline-flex;
+  margin-inline: 38px;
 }
-.submit-btn input{
-    padding: 10px;
+
+.submit-btn button:hover {
+  background-color: #a47410;
+}
+.submit-btn button {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
 }
 
 /* LOGIN */
-.login-form h3{
-    color: white;
-    text-align: center;
+.login-form h3 {
+  color: white;
+  text-align: center;
 }
-.login-form{
-    border-left: #c5c5c5 solid 10px;
-    border-right: #c5c5c5 solid 10px;
-    background-color: #323332;
-    padding: 40px;
-}
-
-.login-info input{
-    padding: 30px;
-    width: 100%;
-
+.login-form {
+  border-left: #c5c5c5 solid 10px;
+  border-right: #c5c5c5 solid 10px;
+  background-color: #323332;
+  padding: 40px;
+  height: 80vh;
+  margin-top: 68px;
 }
 
-.submit-btn{
-    padding: 10px;
-    display: inline-flex;
-    margin-inline: 38px;
-
+.login-info input {
+  padding: 30px;
+  width: 100%;
+  border: none;
 }
 
-.submit-btn input:hover{
-    background-color: #A47410;
+.login-btn {
+  display: inline-flex;
+  margin-inline: 38px;
+  padding: 100px 35px;
 }
-.submit-btn input{
-    padding: 10px;
+
+.login-btn button:hover {
+  background-color: #a47410;
+}
+.login-btn button {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
 }
 
 /* Contact page */
 
-.contact-form h3{
-    color: white;
-    text-align: center;
+.contact-form h3 {
+  color: white;
+  text-align: center;
 }
-.contact-form{
-    border-left: #c5c5c5 solid 10px;
-    border-right: #c5c5c5 solid 10px;
-    background-color: #323332;
-    padding: 40px;
-}
-
-.contact-info input{
-    padding: 30px;
-    width: 100%;
-
+.contact-form {
+  border-left: #c5c5c5 solid 10px;
+  border-right: #c5c5c5 solid 10px;
+  background-color: #323332;
+  padding: 40px;
 }
 
-.contact-btn{
-    padding: 10px;
-    display: inline-flex;
-    margin-inline: 38px;
-
+.contact-info input {
+  padding: 30px;
+  width: 100%;
 }
 
-.contact-btn input:hover{
-    background-color: #A47410;
+.contact-btn {
+  padding: 10px;
+  display: inline-flex;
+  margin-inline: 38px;
 }
-.contact-btn input{
-    padding: 10px;
+
+.contact-btn input:hover {
+  background-color: #a47410;
+}
+.contact-btn input {
+  padding: 10px;
 }

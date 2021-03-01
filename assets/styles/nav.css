@@ -14,12 +14,12 @@ body {
 
 .container {
   max-width: none;
- 
-  margin-top: 15px
+
+  margin-top: 15px;
 }
 
 /* button */
-#top{
+#top {
   width: 40px;
   line-height: 40px;
   overflow: hidden;
@@ -27,7 +27,7 @@ body {
   position: fixed;
   bottom: 200px;
   right: 0;
-  background-color: #A47410;;
+  background-color: #a47410;
   color: black;
   text-align: center;
   font-size: 30px;
@@ -41,16 +41,20 @@ body {
 /* navigation */
 
 #navbar {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5c5c5;
+  padding: 0px 5%;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
-#navbar ul {
+.nav-link {
   display: flex;
-  list-style: none;
-  background-color: #c5c5c5;
-  justify-content: space-evenly;
-  padding: 10px;
-  color: black;
+  list-style-type: none;
+  transition: all 0.3s linear;
 }
 
 #navbar a {
@@ -58,13 +62,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 10px;
 }
 
 #navbar a:hover {
   color: #323332;
   text-decoration: underline;
-  text-decoration-color: #323332
-  
+  text-decoration-color: #323332;
 }
 
 /* footer */
@@ -75,16 +79,22 @@ body {
   width: 100%;
 }
 
+.footer-layout {
+  display: flex;
+  justify-content: center;
+}
 .footer-layout ul {
   list-style: none;
   display: flex;
 }
 
 .footer-column {
-  display: block;
+  display: flex;
   text-align: center;
-  margin-inline: 173px;
+  margin-inline: 126px;
   text-transform: uppercase;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-column h3 {
@@ -95,7 +105,7 @@ body {
   color: black;
 }
 
-.footer-column a:hover{
+.footer-column a:hover {
   color: #323332;
   text-decoration: underline;
 }

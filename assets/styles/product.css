@@ -10,7 +10,6 @@ h3 {
 
 .container {
   max-width: none;
-  
 }
 
 .navbar ul {
@@ -84,7 +83,7 @@ img {
 }
 
 .active {
-  background-color: #A47410;
+  background-color: #a47410;
 }
 
 /* Fading animation */
@@ -137,6 +136,7 @@ img {
   display: flex;
   text-align: center;
   flex-direction: column;
+  color: white;
 }
 
 /* Men page */

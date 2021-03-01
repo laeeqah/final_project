@@ -5,43 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/styles/nav.css" />
     <link rel="stylesheet" href="assets/styles/landing.css" />
   </head>
   <body>
+    <a href="index.html" id="top" title="scroll-top"
+      ><i class="fa fa-angle-up" style="font-size: 20px"></i
+    ></a>
 
-    <a href="index.html" id = "top" title = "scroll-top"><i class ="fa fa-angle-up" style="font-size: 20px;"></i></a>
-
+    <!--nav-links col-md-2 col-lg-2 -->
     <!-- NAVIGATION -->
-    <div class = "container">
-      <nav id = "navbar">
-        <ul>
-          <h2>LOGO</h2>
-          <a href="index.html"><li>Home</li>
-          </a>
-          <a href="#layout"><li>About</li>
-          </a>
-          <a href="#product-section">Product</li>
-          </a>
-          <a href="contact.html"><li>Contact</li>
-          </a>
-          <a href="cart.html"><li><i class="fa fa-shopping-cart" style="font-size:24px"></i></li>
-          </a>
-          <a href="sign-up.html"><li>Sign up</li>
-          </a>
-          <a href="login.html"><li>LOgin</li>
-          </a>
-
+    <div class="container">
+      <nav id="navbar">
+        <h2>LOGO</h2>
+        <ul class="nav-link">
+          <li class="nav-links"><a href="index.html">Home</a></li>
+          <li class="nav-links"><a href="#layout">About</a></li>
+          <li class="nav-links"><a href="#product-section">Product</a></li>
+          <li class="nav-links"><a href="contact.html">Contact</a></li>
+          <li class="nav-links">
+            <a href="cart.html">
+              <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+            </a>
+          </li>
+          <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
+          <li class="nav-links"><a href="login.html">Login</a></li>
         </ul>
       </nav>
-      
     </div>
     <!-- HEADER -->
-    <div class = "container">
-      <header id = "heading">
-        <div class = "text">
+    <div class="container">
+      <header id="heading">
+        <div class="text">
           <h1>TITLE</h1>
           <p>caption</p>
         </div>
@@ -49,7 +54,7 @@
     </div>
 
     <!-- ABOUT -->
-    <div class = "container">
+    <div class="container">
       <div id="layout">
         <img
           class="about-pic"
@@ -69,10 +74,8 @@
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        
       </div>
-    </div>
-    <div class = "container">
+
       <div id="layout">
         <img class="about-pic" src="./assets/images/landing-men-image.jpg" />
         <div class="about-info">
@@ -90,50 +93,49 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- PRODUCTS LINKS -->
-    <div class = "container">
-      <div id = "product-section">
-        <div class = "products">
-          <a href="women_items.html">
-            <img src="assets/images/landing-women-images.jpg" alt="women">
-          </a>
-        </div>
-        <div class = "products">
-          <a href="men_items.html">
-            <img src="assets/images/pink-blazer-landing.jpg" alt="men">
-          </a>
-        </div>
+
+      <!-- PRODUCTS LINKS -->
+      <div class="container">
+        <div id="product-section">
+          <div class="products">
+            <a href="women_items.html">
+              <img src="assets/images/landing-women-images.jpg" alt="women" />
+            </a>
+          </div>
+          <div class="products">
+            <a href="men_items.html">
+              <img src="assets/images/pink-blazer-landing.jpg" alt="men" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-     <!-- FOOTER -->
-    <div class = "container">
-      <footer id = "footer-bottom">
-        <div class = "footer-layout">
-          <ul>
-            <div class = "footer-column">
-              <h4><li>Shop</li></h4>
-              <a href = "women_items.html"><li>women</li></a>
-              <a href = "men_items.html"><li>men</li></a>
-            </div>
-            <div class = "footer-column">
-              <h4><li>Information</li></h4>
-              <a href = "#layout"><li>About Us</li></a>
-              <a href = "contact.html"><li>Contact Us</li></a>
-            </div>
-            <div class = "footer-column">
-              <h4><li>Information</li></h4>
-              <a href = "sign-up.html"><li>Sign Up</li></a>
-              <a href = "login.html"><li>Login</li></a>
+    <!-- FOOTER -->
 
-            </div>
-          </ul>
-        </div> 
-      </footer>
-    </div>
-    
-    <script src = "assets/scripts/landing.js"></script>
+    <script src="assets/scripts/landing.js"></script>
   </body>
+  <div class="container">
+    <footer id="footer-bottom">
+      <div class="footer-layout">
+        <ul>
+          <div class="footer-column">
+            <h4><li>Shop</li></h4>
+            <a href="women_items.html"><li>women</li></a>
+            <a href="men_items.html"><li>men</li></a>
+          </div>
+          <div class="footer-column">
+            <h4><li>Information</li></h4>
+            <a href="#layout"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+          </div>
+          <div class="footer-column">
+            <h4><li>Information</li></h4>
+            <a href="sign-up.html"><li>Sign Up</li></a>
+            <a href="login.html"><li>Login</li></a>
+          </div>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </html>
