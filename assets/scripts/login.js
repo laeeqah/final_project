@@ -1,8 +1,8 @@
 function logUser() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/main/", {
-    method: "POST",
+  fetch("http://127.0.0.1:5000/logged/", {
+    method: "GET",
     body: JSON.stringify({
       username: inputs[0].value,
       password: inputs[1].value,
@@ -13,7 +13,7 @@ function logUser() {
   })
     .then((response) => response.json())
     .then((json) => {
-      alert("user has been created");
+      alert("You logged in");
       document.getElementById("login-form").reset();
     });
 }

@@ -16,10 +16,11 @@
   text-align: center;
 }
 .signup-form {
-  border-left: #c5c5c5 solid 10px;
-  border-right: #c5c5c5 solid 10px;
+  border-left: #912f40 solid 10px;
+  border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
+  margin-top: 40px;
 }
 
 .sign-info input {
@@ -34,7 +35,7 @@
 }
 
 .submit-btn button:hover {
-  background-color: #a47410;
+  background-color: #912f40;
 }
 .submit-btn button {
   padding: 10px;
@@ -48,12 +49,12 @@
   text-align: center;
 }
 .login-form {
-  border-left: #c5c5c5 solid 10px;
-  border-right: #c5c5c5 solid 10px;
+  border-left: #912f40 solid 10px;
+  border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
   height: 80vh;
-  margin-top: 68px;
+  margin-top: 40px;
 }
 
 .login-info input {
@@ -69,7 +70,7 @@
 }
 
 .login-btn button:hover {
-  background-color: #a47410;
+  background-color: #912f40;
 }
 .login-btn button {
   padding: 10px;
@@ -84,10 +85,11 @@
   text-align: center;
 }
 .contact-form {
-  border-left: #c5c5c5 solid 10px;
-  border-right: #c5c5c5 solid 10px;
+  border-left: #912f40 solid 10px;
+  border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
+  margin-top: 40px;
 }
 
 .contact-info input {
@@ -95,15 +97,24 @@
   width: 100%;
 }
 
-.contact-btn {
-  padding: 10px;
-  display: inline-flex;
-  margin-inline: 38px;
+.contact-info input {
+  padding: 30px;
+  width: 100%;
+  border: none;
 }
 
-.contact-btn input:hover {
-  background-color: #a47410;
+.contact-btn {
+  display: inline-flex;
+  margin-inline: 38px;
+  padding: 100px 35px;
 }
-.contact-btn input {
+
+.contact-btn button:hover {
+  background-color: #912f40;
+}
+
+.contact-btn button {
   padding: 10px;
+  border: none;
+  border-radius: 25px;
 }

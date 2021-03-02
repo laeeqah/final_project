@@ -27,7 +27,7 @@ body {
   position: fixed;
   bottom: 200px;
   right: 0;
-  background-color: #a47410;
+  background-color: #912f40;
   color: black;
   text-align: center;
   font-size: 30px;
@@ -66,12 +66,18 @@ body {
 }
 
 #navbar a:hover {
-  color: #323332;
+  color: #912f40;
   text-decoration: underline;
-  text-decoration-color: #323332;
+  text-decoration-color: #912f40;
 }
 
 /* footer */
+#footer-bottom-cart {
+  bottom: 0px;
+  background-color: #c5c5c5;
+  width: 100%;
+  position: fixed;
+}
 
 #footer-bottom {
   bottom: 0px;
@@ -106,6 +112,6 @@ body {
 }
 
 .footer-column a:hover {
-  color: #323332;
+  color: #912f40;
   text-decoration: underline;
 }

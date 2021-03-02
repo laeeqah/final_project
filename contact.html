@@ -50,7 +50,17 @@
 
         <br />
         <div class="contact-info">
+          <input placeholder="Fullname" type="text" name="fullname" /><br />
+        </div>
+
+        <br />
+        <div class="contact-info">
           <input placeholder="Username" type="text" name="username" /><br />
+        </div>
+
+        <br />
+        <div class="contact-info">
+          <input placeholder="Email" type="text" name="email" /><br />
         </div>
 
         <br />
@@ -60,11 +70,13 @@
 
         <!-- SUBMIT BUTTON -->
         <div class="contact-btn">
-          <input type="submit" value="Send" /><br />
+          <button type="submit" value="Submit">Submit</button><br />
         </div>
         <!-- CLEAR BUTTON -->
         <div class="contact-btn">
-          <input type="submit" value="Clear" /><br />
+          <button name="clear" type="button" value="Clear" onclick="reset()">
+            Clear</button
+          ><br />
         </div>
       </form>
     </div>
