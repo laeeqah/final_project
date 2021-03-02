@@ -1,21 +1,31 @@
-function logUser() {
-  const inputs = document.getElementsByTagName("input");
+let users;
 
-  fetch("http://127.0.0.1:5000/logged/", {
-    method: "GET",
-    body: JSON.stringify({
-      username: inputs[0].value,
-      password: inputs[1].value,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-    },
-  })
-    .then((response) => response.json())
-    .then((json) => {
-      alert("You logged in");
-      document.getElementById("login-form").reset();
-    });
+fetch("http://127.0.0.1:5000/logged/")
+  .then((response) => response.json())
+  .then((data) => {
+    console.table(data.body);
+    users = data.body;
+  });
+function logUser() {
+  let inputs = document.getElementsByTagName("input");
+
+  let username = inputs[0].value;
+  let password = inputs[1].value;
+
+  let log = users.filter((user) => {
+    return user.username == username && user.password == password
+      ? true
+      : false;
+  });
+
+  console.log(log);
+
+  if (log.length > 0) {
+    alert("Successfully logged in");
+    window.location.href = "./index.html";
+  } else {
+    alert("Incorrect username or password");
+  }
 }
 
 function clear() {
