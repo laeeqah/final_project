@@ -1,11 +1,12 @@
-let users;
+let users = [];
 
-fetch("http://127.0.0.1:5000/logged/")
+fetch("http://127.0.0.1:5000/list-records/")
   .then((response) => response.json())
   .then((data) => {
-    console.table(data.body);
-    users = data.body;
+    console.log(data);
+    users = data;
   });
+
 function logUser() {
   let inputs = document.getElementsByTagName("input");
 

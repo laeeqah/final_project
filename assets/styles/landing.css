@@ -14,11 +14,17 @@ body {
   line-height: 1.6;
 }
 
+.text h1 {
+  color: #912f40;
+  font-size: 100px;
+  font-family: cursive;
+}
+
 #heading {
-  display: flex;
   object-fit: cover;
   align-items: center;
 }
+
 #heading {
   height: 100vh;
   background-size: cover;
@@ -39,7 +45,6 @@ body {
 }
 
 .text {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -47,13 +52,10 @@ body {
 }
 
 #layout {
-  display: flex;
 }
 
 .about-info {
   padding-inline: 20px;
-  display: flex;
-  flex-direction: column;
 }
 .about-info h3 {
   color: #912f40;
@@ -63,8 +65,7 @@ body {
   color: white;
 }
 .about-pic {
-  display: flex;
-  width: 40%;
+  width: 20%;
   height: 50%;
   object-fit: cover;
   margin: 10px;
@@ -79,5 +80,4 @@ body {
 }
 
 #product-section {
-  display: flex;
 }

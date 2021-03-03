@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      onsubmit="event.preventDefault(); addProducts();"
+      id="product-form"
+      class="product-form"
+    >
+      <h4>Product Name</h4>
+      <input type="text" id="p_name" class="database_form" name="p_name" />
+      <h4>Image</h4>
+      <p>
+        Please convert images to a link
+        <a href="https://postimages.org/">Click Me</a>
+        <input type="text" id="img_link" class="img_link" name="img_link" />
+      </p>
+      <h4>Price</h4>
+      <input type="text" id="p_rice" class="database_form" name="p_rice" />
+      <h4>Description</h4>
+      <input type="text" id="des" class="database_form" name="description" />
+      <h4>Catergory</h4>
+      <input type="text" id="cate" class="database_form" name="category" />
+      <h4>Color</h4>
+      <input type="text" id="color" class="database_form" name="color" />
+      <h4>Size</h4>
+      <input type="text" id="size" class="database_form" name="size" />
+      <button type="submit" value="Submit">Submit</button><br />
+      <button type="submit" value="Clear" onclick="clear()">Clear</button><br />
+    </form>
+    <script src="assets/scripts/upload_product.js"></script>
+  </body>
+</html>

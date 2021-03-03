@@ -118,3 +118,59 @@
   border: none;
   border-radius: 25px;
 }
+
+/* Dummy landing */
+.landing-sign-info input {
+  padding: 30px;
+  width: 100%;
+}
+
+.submit-btn {
+  padding: 10px;
+  display: inline-flex;
+  margin-inline: 38px;
+}
+
+.submit-btn button:hover {
+  background-color: #912f40;
+}
+.submit-btn button {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+}
+
+/* LOGIN */
+.login-form h3 {
+  color: white;
+  text-align: center;
+}
+.login-form {
+  border-left: #912f40 solid 10px;
+  border-right: #912f40 solid 10px;
+  background-color: #323332;
+  padding: 40px;
+  height: 80vh;
+  margin-top: 40px;
+}
+
+.landing-login-info input {
+  padding: 30px;
+  width: 100%;
+  border: none;
+}
+
+.login-btn {
+  display: inline-flex;
+  margin-inline: 38px;
+  padding: 100px 35px;
+}
+
+.login-btn button:hover {
+  background-color: #912f40;
+}
+.login-btn button {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+}
