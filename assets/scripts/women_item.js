@@ -21,7 +21,7 @@ function showSlides() {
 }
 
 function productListed() {
-  fetch("http://127.0.0.1:5000/ list-products/")
+  fetch("http://127.0.0.1:5000/list-products/")
     .then((res) => res.json())
     .then((data) => {
       console.table(data);

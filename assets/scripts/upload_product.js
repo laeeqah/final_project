@@ -1,7 +1,13 @@
+// let app = [];
+
+// app.use(function (res) {
+//   res.header("Access-Control-Allow-Origin", "*");
+// });
+
 function addProducts() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("https://arcane-shelf-35923.herokuapp.com/add_product/", {
+  fetch("http://127.0.0.1:5000/list-product/", {
     method: "POST",
     body: JSON.stringify({
       p_name: inputs[0].value,

@@ -26,9 +26,11 @@ body {
 }
 
 #heading {
+  width: 100vw;
   height: 100vh;
   background-size: cover;
   animation: backgroundChanger 5s infinite;
+  display: flex;
 }
 
 @keyframes backgroundChanger {
@@ -49,9 +51,11 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  display: flex;
 }
 
 #layout {
+  display: inline-flex;
 }
 
 .about-info {
@@ -73,6 +77,9 @@ body {
 
 /* Product Section */
 
+.products {
+  padding-inline: 5px;
+}
 .products img {
   width: 48vw;
   height: 100vh;
@@ -80,4 +87,5 @@ body {
 }
 
 #product-section {
+  display: inline-flex;
 }

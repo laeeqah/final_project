@@ -1,7 +1,7 @@
 function createUsers() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("https://arcane-shelf-35923.herokuapp.com/main/", {
+  fetch("https://arcane-shelf-35923.herokuapp.com/register/", {
     method: "POST",
     body: JSON.stringify({
       fullname: inputs[0].value,

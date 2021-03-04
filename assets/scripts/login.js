@@ -1,6 +1,7 @@
-let users = [];
+// LOGIN FUNCTION
+let users;
 
-fetch("http://127.0.0.1:5000/list-records/")
+fetch("https://arcane-shelf-35923.herokuapp.com/list-records/")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -8,15 +9,16 @@ fetch("http://127.0.0.1:5000/list-records/")
   });
 
 function logUser() {
-  let inputs = document.getElementsByTagName("input");
+  let form = document.getElementById("login-form");
+  let inputs = form.getElementsByTagName("input");
 
   let username = inputs[0].value;
   let password = inputs[1].value;
 
+  console.log(username, password);
+
   let log = users.filter((user) => {
-    return user.username == username && user.password == password
-      ? true
-      : false;
+    return user.username == username && user.password == password;
   });
 
   console.log(log);

@@ -74,14 +74,9 @@ body {
 }
 
 /* footer */
-#footer-bottom-cart {
-  bottom: 0px;
-  background-color: #c5c5c5;
-  width: 100%;
-  position: fixed;
-}
 
 #footer-bottom {
+  margin-top: 20px;
   bottom: 0px;
   background-color: #c5c5c5;
   width: 100%;
