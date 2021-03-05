@@ -21,7 +21,7 @@ function showSlides() {
 }
 
 function productListed() {
-  fetch("http://127.0.0.1:5000/list-products/")
+  fetch("https://arcane-shelf-35923.herokuapp.com/list-products/")
     .then((res) => res.json())
     .then((data) => {
       console.table(data);
@@ -43,3 +43,29 @@ function productListed() {
 }
 
 productListed();
+
+// MODAL
+let modal = document.getElementById("proModal");
+
+// THE BUTTON THAT OPENS THE MODAL
+let btn = document.getElementById("viewBtn");
+
+// THE <span> ELEMENT THAT CLOSES THE MODEL
+let span = document.getElementsByClassName("close")[0];
+
+// CLICK ON THE BUTTON MODEL OPENS
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// USER CLICK ON <span> (x) IT WILL CLOSE THE MODEL
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// ANYWHERE CLICKED OUTSIDE THE MODAL IT WILL CLOSE
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
