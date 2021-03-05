@@ -30,8 +30,11 @@ function productListed() {
       data.forEach((product) => {
         let item = ` 
             <div class ="card">
-              <img src=${product.image} />
+              <h4>${product.catergories}
+              <img src=${product.images} />
               <h4>${product.name}</h4>
+              <h4>${product.description}</h4>
+              <h4>${product.price}</h4>
             </div>`;
         console.log(item);
         list.innerHTML = item;

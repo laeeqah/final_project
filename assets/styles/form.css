@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
-.container {
+#text p {
+  color: white;
+}
+.form-container {
   max-width: none;
-  display: flex;
   margin-top: 20px;
-  justify-content: center;
+  display: flex;
+}
+
+.form-layout {
+  width: max-content;
+  padding-left: 100px;
 }
 /* INDEX SIGN UP */
 .signup-form h3 {

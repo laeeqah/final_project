@@ -23,7 +23,7 @@ function logUser() {
 
   console.log(log);
 
-  if (log.length > 0) {
+  if (log.length >= 1) {
     alert("Successfully logged in");
     window.location.href = "./index.html";
   } else {

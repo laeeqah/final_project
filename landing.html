@@ -26,70 +26,74 @@
 
     <!--nav-links col-md-2 col-lg-2 -->
     <!-- NAVIGATION -->
-    <div class="container">
-      <nav id="navbar">
-        <h2>LOGO</h2>
-        <ul class="nav-link">
-          <li class="nav-landing-links"><a href="sign-up.html">Sign up</a></li>
-          <li class="nav-landing-links"><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+
+    <nav id="navbar">
+      <img src="./assets/images/logo.jpg" />
+      <ul class="nav-link">
+        <li class="nav-landing-links"><a href="sign-up.html">Sign up</a></li>
+        <li class="nav-landing-links"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
 
     <!-- HEADER -->
-    <div class="container">
-      <header id="heading">
-        <div class="text">
-          <h1>Welcome!</h1>
-          <p>Login or Sign up</p>
-        </div>
-      </header>
-    </div>
 
-    <div class="container">
-      <form
-        onsubmit="event.preventDefault(); createUsers();"
-        id="signup-form"
-        class="landing-signup-form"
-      >
-        <h3>Don't have an account?</h3>
-        <h3>Sign up and join the family</h3>
-        <br />
-        <div class="landing-sign-info">
-          <input placeholder="Fullname" type="text" name="fullname" /><br />
-        </div>
+    <header id="heading">
+      <div class="text">
+        <h1>Welcome!</h1>
+        <p>Login or Sign up</p>
+      </div>
+    </header>
 
-        <br />
-        <div class="landing-sign-info">
-          <input placeholder="Username" type="text" name="username" /><br />
-        </div>
+    <div class="form-container">
+      <div class="form-layout">
+        <form
+          onsubmit="event.preventDefault(); createUsers();"
+          id="signup-form"
+          class="landing-signup-form"
+        >
+          <h3>Don't have an account?</h3>
+          <h3>Sign up and join the family</h3>
+          <br />
+          <div class="landing-sign-info">
+            <input placeholder="Fullname" type="text" name="fullname" /><br />
+          </div>
 
-        <br />
-        <div class="landing-sign-info">
-          <input
-            placeholder="Your Email Address"
-            type="email"
-            name="email"
-          /><br />
-        </div>
+          <br />
+          <div class="landing-sign-info">
+            <input placeholder="Username" type="text" name="username" /><br />
+          </div>
 
-        <br />
-        <div class="landing-sign-info">
-          <input placeholder="password" type="password" name="password" /><br />
-        </div>
-        <!-- SUBMIT BUTTON -->
-        <div class="submit-btn">
-          <button type="submit" value="Submit">Submit</button><br />
-        </div>
-        <!-- CLEAR BUTTON -->
-        <div class="submit-btn">
-          <button name="clear" type="clear" value="Clear" onclick="clear()">
-            Clear</button
-          ><br />
-        </div>
-      </form>
+          <br />
+          <div class="landing-sign-info">
+            <input
+              placeholder="Your Email Address"
+              type="email"
+              name="email"
+            /><br />
+          </div>
 
-      <div class="container">
+          <br />
+          <div class="landing-sign-info">
+            <input
+              placeholder="password"
+              type="password"
+              name="password"
+            /><br />
+          </div>
+          <!-- SUBMIT BUTTON -->
+          <div class="submit-btn">
+            <button type="submit" value="Submit">Submit</button><br />
+          </div>
+          <!-- CLEAR BUTTON -->
+          <div class="submit-btn">
+            <button name="clear" type="clear" value="Clear" onclick="clear()">
+              Clear</button
+            ><br />
+          </div>
+        </form>
+      </div>
+
+      <div class="form-layout">
         <form
           onsubmit="event.preventDefault(); logUser();"
           id="login-form"
@@ -128,9 +132,6 @@
 
     <!-- FOOTER -->
 
-    <script src="assets/scripts/landing.js"></script>
-  </body>
-  <div class="container">
     <footer id="footer-bottom">
       <div class="footer-layout">
         <ul>
@@ -152,7 +153,8 @@
         </ul>
       </div>
     </footer>
+    <script src="assets/scripts/landing.js"></script>
     <script src="assets/scripts/sign_up.js"></script>
     <script src="assets/scripts/login.js"></script>
-  </div>
+  </body>
 </html>

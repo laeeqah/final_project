@@ -16,6 +16,7 @@ function createUsers() {
     .then((response) => response.json())
     .then((json) => {
       alert("user has been created");
+      window.location.href = "./index.html";
       document.getElementById("signup-form").reset();
     });
 }
