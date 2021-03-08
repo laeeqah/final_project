@@ -21,7 +21,7 @@ function showSlides() {
 }
 
 function productListed() {
-  fetch("https://arcane-shelf-35923.herokuapp.com/list-products/")
+  fetch("https://arcane-shelf-35923.herokuapp.com/list-women/")
     .then((res) => res.json())
     .then((data) => {
       console.table(data);
@@ -29,15 +29,33 @@ function productListed() {
       console.log(list);
       data.forEach((product) => {
         let item = ` 
+            
             <div class ="card">
-              <h4>${product.catergories}
-              <img src=${product.images} />
-              <h4>${product.name}</h4>
-              <h4>${product.description}</h4>
-              <h4>${product.price}</h4>
+            <h4>${product.categories}</h4>
+              <div class="product-image">
+                <img src=${product.images} />
+              </div>
+              <div class="product-info">
+                <h4>${product.name}</h4>
+                <h4>${product.price}</h4>
+                <button class = "cart">Add Cart</button>
+                <button id = "viewBtn">View Item</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+
+                </div>
+              </div>
+                
             </div>`;
+
         console.log(item);
-        list.innerHTML = item;
+        list.innerHTML += item;
       });
     });
 }
@@ -45,7 +63,7 @@ function productListed() {
 productListed();
 
 // MODAL
-let modal = document.getElementById("proModal");
+let modal = document.getElementById("myModal");
 
 // THE BUTTON THAT OPENS THE MODAL
 let btn = document.getElementById("viewBtn");

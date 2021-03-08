@@ -28,8 +28,16 @@
         <img src="./assets/images/logo.jpg" />
         <ul class="nav-link">
           <li class="nav-links"><a href="index.html">Home</a></li>
-          <li class="nav-links"><a href="#layout">About</a></li>
-          <li class="nav-links"><a href="#product-section">Product</a></li>
+          <li class="nav-links"><a href="index.html">About</a></li>
+          <div class="dropdown">
+            <li class="nav-links dropdown-btn">
+              <a href="#">Product</a>
+            </li>
+            <div class="drop-content">
+              <a href="women_items.html">Women</a>
+              <a href="men_items.html">Men</a>
+            </div>
+          </div>
           <li class="nav-links"><a href="contact.html">Contact</a></li>
           <li class="nav-links">
             <a href="cart.html">
@@ -43,7 +51,11 @@
     </div>
 
     <div class="container">
-      <form id="contact-form" class="contact-form">
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formspree.io/f/xdopygjr"
+      >
         <h3>Contact Us</h3>
         <br />
         <h3>Put in your details</h3>

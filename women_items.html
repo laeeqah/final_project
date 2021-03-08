@@ -16,7 +16,6 @@
     />
     <link rel="stylesheet" href="assets/styles/product.css" />
     <link rel="stylesheet" href="assets/styles/nav.css" />
-    <link rel="stylesheet" href="assets/styles/women.css">
   </head>
   <body>
     <a href="women_items.html" id="top" title="scroll-top"
@@ -28,12 +27,30 @@
         <ul class="nav-link">
           <li class="nav-links"><a href="index.html">Home</a></li>
           <li class="nav-links"><a href="#layout">About</a></li>
-          <li class="nav-links"><a href="index.html">Product</a></li>
+          <div class="dropdown">
+            <li class="nav-links dropdown-btn">
+              <a href="#">Product</a>
+            </li>
+            <div class="drop-content">
+              <a href="women_items.html">Women</a>
+              <a href="men_items.html">Men</a>
+            </div>
+          </div>
           <li class="nav-links"><a href="contact.html">Contact</a></li>
           <li class="nav-links">
-            <a href="cart.html">
-              <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+            <a href="#">
+              <i
+                class="fa fa-shopping-cart viewBtn"
+                style="font-size: 24px"
+              ></i>
             </a>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
+            </div>
           </li>
           <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
           <li class="nav-links"><a href="login.html">Login</a></li>
@@ -65,183 +82,8 @@
       </div>
     </section>
 
-    <h3>Dresses</h3>
-    <section class="container">
-      <div class="women-list">
-        <ul>
-          <div class="women-info">
-            <li><img src="assets/images/cocktail-dress3.jpg" /></li>
-            <p>Maroon Dress</p>
-            <p>R800</p>
-            <p>
-              <button id ="viewBtn">VIEW</button>
-              <div id="proModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
-                  </div>
-                  <div class="modal-body">
-                    <sidebar class ="side-img">
-                      <img src="assets/images/cocktail-dress3.jpg" />
-                    </sidebar>
-                    <p>DESCRIPTION</p>
-                    <div class="dropdown">SIZE>
-                      <p></p>
-                      <p></p>
-                      <p></p>
-                    </div>
-                    <div class = "color-amount">
-                      <p>Color:</p>
-                    </div>
-                    <button>Add Cart</button>
-
-                  </div>
-                  <div class="modal-footer">
-                    <h3>Total</h3>
-                  </div>
-                </div>
-              
-              </div>
-              
-            </p>
-          </div>
-
-          <div class="women-info">
-            <li><img src="assets/images/cocktail-dress2.jpg" /></li>
-            <p>Sparkly Dress</p>
-            <p>R950</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-          <div class="women-info">
-            <li><img src="assets/images/cocktail-dress3.jpg" /></li>
-            <p>Maroon Dress</p>
-            <p>R950</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-    <h3>Tops</h3>
-    <section class="container">
-      <div class="women-list">
-        <ul>
-          <div class="women-info">
-            <li><img src="assets/images/women-blouse-maroon.jpg" /></li>
-            <p>Maroon Blouse</p>
-            <p>R500</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="women-info">
-            <li><img src="assets/images/women-blouse-maroon.jpg" /></li>
-            <p>Maroon Blouse</p>
-            <p>R500</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-          <div class="women-info">
-            <li><img src="assets/images/black-croptop-women.jpg" /></li>
-            <p>Classy Crop-Trop</p>
-            <p>R300</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-    <h3>Pants & Skirts</h3>
-    <section class="container">
-      <div class="women-list">
-        <ul>
-          <div class="women-info">
-            <li><img src="assets/images/women-pants1.jpg" /></li>
-            <p>Nude Classy Pants</p>
-            <p>R300</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="women-info">
-            <li><img src="assets/images/women-pants2.jpg" /></li>
-            <p>Classy Black Pants</p>
-            <p>price</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="women-list">
-        <ul>
-          <div class="women-info">
-            <li><img src="assets/images/women-skirts2.jpg" /></li>
-            <p>Black and white Check</p>
-            <p>R200</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="women-info">
-            <li><img src="assets/images/women-skirts3.jpg" /></li>
-            <p>Plain White Skirt</p>
-            <p>R200</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-    <h3>Accessory</h3>
-    <section class="container">
-      <div class="women-list">
-        <ul>
-          <div class="women-info">
-            <li><img src="assets/images/women-bag2.jpg" /></li>
-            <p>Leather Bag</p>
-            <p>R250</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="women-info">
-            <li><img src="assets/images/accessory1.jpg" /></li>
-            <p>Gold Earrings</p>
-            <p>R400</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-          <div class="women-info">
-            <li><img src="assets/images/accessory2.jpg" /></li>
-            <p>White Heels</p>
-            <p>R600</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
+    <section>
+      <ul id="products"></ul>
     </section>
 
     <!-- FOOTER -->
@@ -260,7 +102,7 @@
           </div>
           <div class="footer-column">
             <h4><li>Information</li></h4>
-            <a href="#layout"><li>About Us</li></a>
+            <a href="index.html"><li>About Us</li></a>
             <a href="contact.html"><li>Contact Us</li></a>
             <a href="sign-up.html"><li>Sign Up</li></a>
             <a href="login.html"><li>Login</li></a>

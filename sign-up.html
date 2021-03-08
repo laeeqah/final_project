@@ -25,11 +25,19 @@
     <!-- NAVIGATION -->
     <div class="container">
       <nav id="navbar">
-        <h2>LOGO</h2>
+        <img src="./assets/images/logo.jpg" />
         <ul class="nav-link">
           <li class="nav-links"><a href="index.html">Home</a></li>
           <li class="nav-links"><a href="#layout">About</a></li>
-          <li class="nav-links"><a href="#product-section">Product</a></li>
+          <div class="dropdown">
+            <li class="nav-links dropdown-btn">
+              <a href="#">Product</a>
+            </li>
+            <div class="drop-content">
+              <a href="women_items.html">Women</a>
+              <a href="men_items.html">Men</a>
+            </div>
+          </div>
           <li class="nav-links"><a href="contact.html">Contact</a></li>
           <li class="nav-links">
             <a href="cart.html">
@@ -41,6 +49,8 @@
         </ul>
       </nav>
     </div>
+
+    <div id="result"></div>
 
     <div class="container">
       <form

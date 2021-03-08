@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="assets/styles/nav.css" />
     <link rel="stylesheet" href="assets/styles/landing.css" />
+    <link rel="stylesheet" href="responsives.css" />
   </head>
   <body>
     <a href="index.html" id="top" title="scroll-top"
@@ -26,12 +27,20 @@
     <!--nav-links col-md-2 col-lg-2 -->
     <!-- NAVIGATION -->
 
-    <nav id="navbar" class="col-md-6">
+    <nav id="navbar">
       <img src="./assets/images/logo.jpg" />
-      <ul class="nav-link col-lg-6">
+      <ul class="nav-link">
         <li class="nav-links"><a href="index.html">Home</a></li>
         <li class="nav-links"><a href="#layout">About</a></li>
-        <li class="nav-links"><a href="#product-section">Product</a></li>
+        <div class="dropdown">
+          <li class="nav-links dropdown-btn">
+            <a href="#">Product</a>
+          </li>
+          <div class="drop-content">
+            <a href="women_items.html">Women</a>
+            <a href="men_items.html">Men</a>
+          </div>
+        </div>
         <li class="nav-links"><a href="contact.html">Contact</a></li>
         <li class="nav-links">
           <a href="cart.html">
@@ -76,7 +85,10 @@
     </div>
 
     <div id="layout">
-      <img class="about-pic" src="./assets/images/landing-men-image.jpg" />
+      <img
+        class="about-pic"
+        src="./assets/images/men-pants-blazer-cropped.jpg"
+      />
       <div class="about-info">
         <h3>Why Us</h3>
         <p>

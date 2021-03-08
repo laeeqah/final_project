@@ -1,0 +1,27 @@
+/* index */
+
+@media (max-width: 600px) {
+  #navbar img {
+    width: 38%;
+  }
+
+  .nav-link {
+    display: block;
+  }
+
+  #heading {
+    width: 110vw;
+  }
+
+  .text h1 {
+    font-size: 55px;
+  }
+
+  #layout {
+    display: block;
+  }
+
+  .about-pic {
+    width: 100vw;
+  }
+}

@@ -26,8 +26,16 @@
         <img src="./assets/images/logo.jpg" />
         <ul class="nav-link">
           <li class="nav-links"><a href="index.html">Home</a></li>
-          <li class="nav-links"><a href="#layout">About</a></li>
-          <li class="nav-links"><a href="index.html">Product</a></li>
+          <li class="nav-links"><a href="index.html">About</a></li>
+          <div class="dropdown">
+            <li class="nav-links dropdown-btn">
+              <a href="#">Product</a>
+            </li>
+            <div class="drop-content">
+              <a href="women_items.html">Women</a>
+              <a href="men_items.html">Men</a>
+            </div>
+          </div>
           <li class="nav-links"><a href="contact.html">Contact</a></li>
           <li class="nav-links">
             <a href="cart.html">
@@ -64,101 +72,8 @@
       </div>
     </section>
 
-    <section class="men-top-container">
-      <h3>Men Tops</h3>
-      <div class="men-list">
-        <ul>
-          <div class="men-info">
-            <li><img src="assets/images/shirt4.jpg" /></li>
-            <p>Blue Long sleeve shirt</p>
-            <p>R300</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="men-info">
-            <li><img src="assets/images/men-shirts1.jpg" /></li>
-            <p>Maroon Shirt</p>
-            <p>R400</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-          <div class="men-info">
-            <li><img src="assets/images/shirt3.jpg" /></li>
-            <p>Blue Short sleeve shirt</p>
-            <p>R250</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-    <section class="men-pants-container">
-      <h3>Pants</h3>
-      <div class="men-list">
-        <ul>
-          <div class="men-info">
-            <li><img src="assets/images/men-pants-black.jpg" /></li>
-            <p>Black Pants</p>
-            <p>R300</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="men-info">
-            <li><img src="assets/images/men-pants-black.jpg" /></li>
-            <p>Black Dress Pants</p>
-            <p>R400</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-          <div class="men-info">
-            <li><img src="assets/images/male-pants1.jpg" /></li>
-            <p>Brown Pants</p>
-            <p>R300</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
-
-      <h3>Accessory</h3>
-      <div class="women-list">
-        <ul>
-          <div class="women-info">
-            <li><img src="assets/images/men-belt.jpg" /></li>
-            <p>Black Men Belt</p>
-            <p>R150</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-
-          <div class="men-info">
-            <li><img src="assets/images/accessory-wallet.jpg" /></li>
-            <p>Black Wallet</p>
-            <p>R50</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-          <div class="men-info">
-            <li><img src="assets/images/accessory-watch.jpg" /></li>
-            <p>Men Watch</p>
-            <p>R150</p>
-            <p>
-              <a href=""><button>VIEW</button></a>
-            </p>
-          </div>
-        </ul>
-      </div>
+    <section>
+      <ul id="products"></ul>
     </section>
 
     <!-- FOOTER -->
@@ -185,6 +100,6 @@
         </ul>
       </div>
     </footer>
-    <script src="assets/scripts/women_item.js"></script>
+    <script src="assets/scripts/men_item.js"></script>
   </body>
 </html>
