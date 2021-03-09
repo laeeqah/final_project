@@ -1,13 +1,13 @@
 let slideIndex = 0;
 showSlides();
 
-function PopUpShow() {
-  let popup = document.getElementById("product-popup");
+function PopUpShow(id) {
+  let popup = document.getElementById(`product-popup${id}`);
   popup.style.display = "block";
 }
 
-function PopUpClose() {
-  popup = document.getElementById("product-popup");
+function PopUpClose(id) {
+  popup = document.getElementById(`product-popup${id}`);
   popup.style.display = "none";
 }
 
@@ -48,12 +48,12 @@ function productListed() {
               <div class="product-info">
                 <h4>${product.name}</h4>
                 <h4>${product.price}</h4>
-                <button class = "cart">Add Cart</button>
-                <button class="popup-btn" onClick="PopUpShow()" id="viewBtn">View Product</button>
-                <div id="product-popup" class="popup">
+                <button class = "cart" onclick="addToCart(${product.proid})">Add Cart</button>
+                <button class="popup-btn" onClick="PopUpShow(${product.proid})" id="viewBtn">View Product</button>
+                <div id="product-popup${product.proid}" class="popup">
                     <div class="popup-content">
                         <div class="popup-title text-center">
-                            <span onClick ="PopUpClose()" class="close">&times;</span>
+                            <span onClick ="PopUpClose(${product.proid})" class="close">&times;</span>
                             <h2>${product.name}</h2>
                             <img src=${product.images} />
                         </div>
@@ -116,4 +116,26 @@ function searchProduct() {
     });
 }
 
-//fetch the data
+// CART FUNCTION
+function addToCart(id) {
+  // get cart from local storage
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  // Make sure the cart from localstorage is valid
+  cart ? cart : (cart = []);
+
+  // Get data to search through
+  fetch("https://arcane-shelf-35923.herokuapp.com/list-women/")
+    .then((res) => res.json())
+    .then((data) => {
+      // Get selected item out of backend
+      let product = data.filter((item) => {
+        return item.proid == id;
+      });
+
+      // Add item to cart
+      cart.push(product[0]);
+
+      // put new cart back into local storage
+      localStorage.setItem("cart", JSON.stringify(cart));
+    });
+}

@@ -64,7 +64,7 @@
   }
 
   .footer-column {
-    display: none;
+    display: contents;
     text-align: center;
     margin-inline: none;
     text-transform: uppercase;

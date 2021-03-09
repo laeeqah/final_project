@@ -18,142 +18,164 @@
     <link rel="stylesheet" href="assets/styles/nav.css" />
     <link rel="stylesheet" href="assets/styles/landing.css" />
     <link rel="stylesheet" href="assets/styles/form.css" />
-    <link rel="stylesheet" href="responsives.css">
+    <link rel="stylesheet" href="responsives.css" />
   </head>
   <body>
-    <a href="index.html" id="top" title="scroll-top"
-      ><i class="fa fa-angle-up" style="font-size: 20px"></i
-    ></a>
+    <!-- PRELOADER -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.3.min.js"
+      integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+      crossorigin="anonymous"
+    ></script>
 
-    <!--nav-links col-md-2 col-lg-2 -->
-    <!-- NAVIGATION -->
+    <div id="loader">
+      <div class="preloader"></div>
 
-    <nav id="navbar">
-      <img src="./assets/images/logo.jpg" />
-      <ul class="nav-link">
-        <li class="nav-landing-links"><a href="sign-up.html">Sign up</a></li>
-        <li class="nav-landing-links"><a href="login.html">Login</a></li>
-      </ul>
-    </nav>
-
-    <!-- HEADER -->
-
-    <header id="heading">
-      <div class="text">
-        <h1>Welcome!</h1>
-        <p>Login or Sign up</p>
-      </div>
-    </header>
-
-    <div class="form-container">
-      <div class="form-layout">
-        <form
-          onsubmit="event.preventDefault(); createUsers();"
-          id="signup-form"
-          class="landing-signup-form"
-        >
-          <h3>Don't have an account?</h3>
-          <h3>Sign up and join the family</h3>
-          <br />
-          <div class="landing-sign-info">
-            <input placeholder="Fullname" type="text" name="fullname" /><br />
-          </div>
-
-          <br />
-          <div class="landing-sign-info">
-            <input placeholder="Username" type="text" name="username" /><br />
-          </div>
-
-          <br />
-          <div class="landing-sign-info">
-            <input
-              placeholder="Your Email Address"
-              type="email"
-              name="email"
-            /><br />
-          </div>
-
-          <br />
-          <div class="landing-sign-info">
-            <input
-              placeholder="password"
-              type="password"
-              name="password"
-            /><br />
-          </div>
-          <!-- SUBMIT BUTTON -->
-          <div class="submit-btn">
-            <button type="submit" value="Submit">Submit</button><br />
-          </div>
-          <!-- CLEAR BUTTON -->
-          <div class="submit-btn">
-            <button name="clear" type="clear" value="Clear" onclick="clear()">
-              Clear</button
-            ><br />
-          </div>
-        </form>
-      </div>
-
-      <div class="form-layout">
-        <form
-          onsubmit="event.preventDefault(); logUser();"
-          id="login-form"
-          class="landing-login-form"
-        >
-          <h3>Welcome Back!</h3>
-          <br />
-
-          <br />
-          <div class="landing-login-info">
-            <input placeholder="Username" type="text" name="username" /><br />
-          </div>
-
-          <br />
-          <div class="landing-login-info">
-            <input
-              placeholder="password"
-              type="password"
-              name="password"
-            /><br />
-          </div>
-
-          <!-- SUBMIT BUTTON -->
-          <div class="login-btn">
-            <button type="submit" value="Submit">Submit</button><br />
-          </div>
-          <!-- CLEAR BUTTON -->
-          <div class="login-btn">
-            <button name="clear" type="button" value="Clear" onclick="reset()">
-              Clear</button
-            ><br />
-          </div>
-        </form>
+      <div class="loadBar">
+        <div class="progress"></div>
       </div>
     </div>
 
-    <!-- FOOTER -->
+    <div id="page" class="hidden">
+      <a href="index.html" id="top" title="scroll-top"
+        ><i class="fa fa-angle-up" style="font-size: 20px"></i
+      ></a>
 
-    <footer id="footer-bottom">
-      <div class="footer-layout">
-        <ul>
-          <div class="footer-column">
-            <h4><li>Shop</li></h4>
-            <a href="women_items.html"><li>women</li></a>
-            <a href="men_items.html"><li>men</li></a>
-          </div>
-          <div class="footer-column">
-            <h4><li>Information</li></h4>
-            <a href="#layout"><li>About Us</li></a>
-            <a href="contact.html"><li>Contact Us</li></a>
-          </div>
-          <div class="footer-column">
-            <h4><li>Information</li></h4>
-            <a href="sign-up.html"><li>Sign Up</li></a>
-            <a href="login.html"><li>Login</li></a>
-          </div>
+      <!--nav-links col-md-2 col-lg-2 -->
+      <!-- NAVIGATION -->
+
+      <nav id="navbar">
+        <img src="./assets/images/logo.jpg" />
+        <ul class="nav-link">
+          <li class="nav-landing-links"><a href="sign-up.html">Sign up</a></li>
+          <li class="nav-landing-links"><a href="login.html">Login</a></li>
         </ul>
+      </nav>
+
+      <!-- HEADER -->
+
+      <header id="heading">
+        <div class="text">
+          <h1>Welcome!</h1>
+          <p>Login or Sign up</p>
+        </div>
+      </header>
+
+      <div class="form-container">
+        <div class="form-layout">
+          <form
+            onsubmit="event.preventDefault(); createUsers();"
+            id="signup-form"
+            class="landing-signup-form"
+          >
+            <h3>Don't have an account?</h3>
+            <h3>Sign up and join the family</h3>
+            <br />
+            <div class="landing-sign-info">
+              <input placeholder="Fullname" type="text" name="fullname" /><br />
+            </div>
+
+            <br />
+            <div class="landing-sign-info">
+              <input placeholder="Username" type="text" name="username" /><br />
+            </div>
+
+            <br />
+            <div class="landing-sign-info">
+              <input
+                placeholder="Your Email Address"
+                type="email"
+                name="email"
+              /><br />
+            </div>
+
+            <br />
+            <div class="landing-sign-info">
+              <input
+                placeholder="password"
+                type="password"
+                name="password"
+              /><br />
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <div class="submit-btn">
+              <button type="submit" value="Submit">Submit</button><br />
+            </div>
+            <!-- CLEAR BUTTON -->
+            <div class="submit-btn">
+              <button name="clear" type="clear" value="Clear" onclick="clear()">
+                Clear</button
+              ><br />
+            </div>
+          </form>
+        </div>
+
+        <div class="form-layout">
+          <form
+            onsubmit="event.preventDefault(); logUser();"
+            id="login-form"
+            class="landing-login-form"
+          >
+            <h3>Welcome Back!</h3>
+            <br />
+
+            <br />
+            <div class="landing-login-info">
+              <input placeholder="Username" type="text" name="username" /><br />
+            </div>
+
+            <br />
+            <div class="landing-login-info">
+              <input
+                placeholder="password"
+                type="password"
+                name="password"
+              /><br />
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="login-btn">
+              <button type="submit" value="Submit">Submit</button><br />
+            </div>
+            <!-- CLEAR BUTTON -->
+            <div class="login-btn">
+              <button
+                name="clear"
+                type="button"
+                value="Clear"
+                onclick="reset()"
+              >
+                Clear</button
+              ><br />
+            </div>
+          </form>
+        </div>
       </div>
-    </footer>
+
+      <!-- FOOTER -->
+
+      <footer id="footer-bottom">
+        <div class="footer-layout">
+          <ul>
+            <div class="footer-column">
+              <h4><li>Shop</li></h4>
+              <a href="women_items.html"><li>women</li></a>
+              <a href="men_items.html"><li>men</li></a>
+            </div>
+            <div class="footer-column">
+              <h4><li>Information</li></h4>
+              <a href="#layout"><li>About Us</li></a>
+              <a href="contact.html"><li>Contact Us</li></a>
+            </div>
+            <div class="footer-column">
+              <h4><li>Information</li></h4>
+              <a href="sign-up.html"><li>Sign Up</li></a>
+              <a href="login.html"><li>Login</li></a>
+            </div>
+          </ul>
+        </div>
+      </footer>
+    </div>
     <script src="assets/scripts/landing.js"></script>
     <script src="assets/scripts/sign_up.js"></script>
     <script src="assets/scripts/login.js"></script>

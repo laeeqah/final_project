@@ -1,4 +1,5 @@
 // LOGIN FUNCTION
+
 let users;
 
 fetch("https://arcane-shelf-35923.herokuapp.com/list-records/")
@@ -25,7 +26,7 @@ function logUser() {
 
   if (log.length >= 0) {
     alert("Successfully logged in");
-    window.location.href = "./index.html";
+    window.location.href = "./landing.html";
   } else {
     alert("Incorrect username or password");
   }
