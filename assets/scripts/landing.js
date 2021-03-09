@@ -1,7 +1,7 @@
 // Preloader timer
 
 $(window).load(function () {
-  let rnd = Math.random() * (8000 - 2000) + 2000;
+  let rnd = Math.random() * (2000 - 2000) + 2000;
 
   $(".progress").css("animation", "loading " + rnd + "ms linear");
 

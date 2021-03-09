@@ -14,63 +14,35 @@ body {
   line-height: 1.6;
 }
 
-/* preloader */
-.hidden {
-  opacity: 0;
+.text h1 {
+  color: #912f40;
+  font-size: 100px;
+  font-family: cursive;
 }
 
-#loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #323332;
+#heading {
+  object-fit: cover;
+  align-items: center;
 }
 
-.preloader {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: calc(50% - 20px);
-  top: calc(50% - 20px);
-  background: #912f40;
-  transform: rotate(45deg);
-  animation: preloader 2s linear infinite;
+#heading {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  animation: backgroundChanger 5s infinite;
+  display: flex;
 }
 
-.loadBar {
-  position: absolute;
-  width: 200px;
-  height: 2px;
-  left: calc(50% - 100px);
-  top: calc(50% + 60px);
-  background: #912f40;
-}
-
-.progress {
-  position: relative;
-  width: 0%;
-  height: inherit;
-  background: #912f40;
-}
-
-@keyframes loading {
+@keyframes backgroundChanger {
   0% {
-    width: 0%;
+    background-image: url("../images/high-fashion-landing-background.jpg");
+    object-fit: cover;
   }
-
+  50% {
+    background-image: url("../images/landing-slider.jpg");
+  }
   100% {
-    width: 100%;
-  }
-}
-
-@keyframes preloader {
-  0%,
-  100% {
-    transform: rotate(45deg);
-  }
-
-  60% {
-    transform: rotate(405deg);
+    background-image: url("../images/landing-slider2.jpg");
   }
 }
 
@@ -117,4 +89,63 @@ body {
 
 #product-section {
   display: inline-flex;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #323332;
+}
+
+.preloader {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  background: #912f40;
+  transform: rotate(45deg);
+  animation: preloader 2s linear infinite;
+}
+
+.loadBar {
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  left: calc(50% - 100px);
+  top: calc(50% + 60px);
+  background: #323332;
+}
+
+.progress {
+  position: relative;
+  width: 0%;
+  height: inherit;
+  background: #912f40;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes preloader {
+  0%,
+  100% {
+    transform: rotate(45deg);
+  }
+
+  60% {
+    transform: rotate(405deg);
+  }
 }

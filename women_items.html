@@ -39,12 +39,19 @@
           <li class="nav-links"><a href="contact.html">Contact</a></li>
           <li class="nav-links">
             <a href="#">
-              <i
-                class="fa fa-shopping-cart viewBtn"
-                style="font-size: 24px"
-              ></i>
+              <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
             </a>
           </li>
+          <div id="product-popup" class="popup">
+            <span onClick="PopUpClose()" class="close">&times;</span>
+            <div class="popup-content">
+              <div class="popup-title text-center price">
+                <h1>Total:</h1>
+              </div>
+              <button class="checkout" onclick="checkout()">Checkout</button>
+            </div>
+            <div id="results"></div>
+          </div>
 
           <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
           <li class="nav-links"><a href="login.html">Login</a></li>

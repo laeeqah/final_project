@@ -133,7 +133,11 @@ function addToCart(id) {
       });
 
       // Add item to cart
-      cart.push(product[0]);
+      productCount = cart.push(product[0]);
+      let selectItem = product[0];
+
+      let product_stuff = `
+      `;
 
       // put new cart back into local storage
       localStorage.setItem("cart", JSON.stringify(cart));

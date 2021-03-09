@@ -20,11 +20,25 @@
     <link rel="stylesheet" href="responsives.css" />
   </head>
   <body>
+    <script
+      src="https://code.jquery.com/jquery-2.2.3.min.js"
+      integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <div id="loader">
+      <div class="preloader"></div>
+
+      <div class="loadBar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <div id="page" class="hidden">Loaded Result!</div>
     <a href="index.html" id="top" title="scroll-top"
       ><i class="fa fa-angle-up" style="font-size: 20px"></i
     ></a>
 
-    <!--nav-links col-md-2 col-lg-2 -->
     <!-- NAVIGATION -->
 
     <nav id="navbar">
@@ -43,10 +57,22 @@
         </div>
         <li class="nav-links"><a href="contact.html">Contact</a></li>
         <li class="nav-links">
-          <a href="cart.html">
+          <!-- POPUP CART -->
+          <a href="#">
             <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
           </a>
         </li>
+        <div id="product-popup" class="popup">
+          <span onClick="PopUpClose()" class="close">&times;</span>
+          <div class="popup-content">
+            <div class="popup-title text-center price">
+              <h1>Total:</h1>
+            </div>
+            <button class="checkout" onclick="checkout()">Checkout</button>
+          </div>
+          <div id="results"></div>
+        </div>
+
         <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
         <li class="nav-links"><a href="login.html">Login</a></li>
       </ul>
