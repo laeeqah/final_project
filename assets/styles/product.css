@@ -119,6 +119,13 @@ img {
   }
 }
 
+/* SEARCH BAR */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 13px 0px;
+}
+
 /* VIEW PRODUCT */
 .modal {
   display: none; /* Hidden by default */
@@ -171,16 +178,109 @@ img {
 
 .card {
   padding: 2%;
-  flex-grow: 1;
   flex-basis: 16%;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .product-image img {
   max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
 }
+
+/* POPUP PRODUCT */
+
+.popup-btn {
+  /* border: none !important; */
+  /* font-size: 1.3rem; */
+  /* color: #912f40 !important; */
+  font-family: "Montserrat", sans-serif;
+  /* padding: 0 !important; */
+}
+.popup-btn:hover {
+  background-color: transparent;
+  color: #323332;
+  border: none;
+  font-weight: 400;
+}
+.popup-btn::after {
+  content: "\f0d1";
+  font-family: "Font Awesome 5 Free";
+  color: #222;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  color: #912f40;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #323332;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-title {
+  padding: 2px 16px;
+  background-color: white;
+  color: white;
+}
+.popup-title h2 {
+  color: #222;
+}
+.popup-body {
+  padding: 50px;
+}
+/* .popup-footer {
+    padding: 2px 16px;
+    background-color: #f8be1c;
+    color: white;
+} */

@@ -72,6 +72,13 @@
       </div>
     </section>
 
+    <div class="search-container">
+      <form id="search-form" onsubmit="event.preventDefault(); searchProduct()">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit" class="fa fa-search"></button>
+      </form>
+    </div>
+
     <section>
       <ul id="products"></ul>
     </section>

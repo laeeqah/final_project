@@ -44,14 +44,8 @@
                 style="font-size: 24px"
               ></i>
             </a>
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
-              </div>
-            </div>
           </li>
+
           <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
           <li class="nav-links"><a href="login.html">Login</a></li>
         </ul>
@@ -81,6 +75,13 @@
         </div>
       </div>
     </section>
+
+    <div class="search-container">
+      <form id="search-form" onsubmit="event.preventDefault(); searchProduct()">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit" class="fa fa-search"></button>
+      </form>
+    </div>
 
     <section>
       <ul id="products"></ul>
