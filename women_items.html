@@ -16,50 +16,40 @@
     />
     <link rel="stylesheet" href="assets/styles/product.css" />
     <link rel="stylesheet" href="assets/styles/nav.css" />
+    <link rel="stylesheet" href="responsives.css" />
   </head>
   <body>
     <a href="women_items.html" id="top" title="scroll-top"
       ><i class="fa fa-angle-up" style="font-size: 20px"></i
     ></a>
-    <div class="container">
-      <nav id="navbar">
-        <img src="./assets/images/logo.jpg" />
-        <ul class="nav-link">
-          <li class="nav-links"><a href="index.html">Home</a></li>
-          <li class="nav-links"><a href="#layout">About</a></li>
-          <div class="dropdown">
-            <li class="nav-links dropdown-btn">
-              <a href="#">Product</a>
-            </li>
-            <div class="drop-content">
-              <a href="women_items.html">Women</a>
-              <a href="men_items.html">Men</a>
-            </div>
-          </div>
-          <li class="nav-links"><a href="contact.html">Contact</a></li>
-          <li class="nav-links">
-            <a href="#">
-              <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
-            </a>
+
+    <nav id="navbar">
+      <img src="./assets/images/logo.jpg" />
+      <ul class="nav-link">
+        <li class="nav-links"><a href="index.html">Home</a></li>
+        <li class="nav-links"><a href="#layout">About</a></li>
+        <div class="dropdown">
+          <li class="nav-links dropdown-btn">
+            <a href="#">Product</a>
           </li>
-          <div id="product-popup" class="popup">
-            <span onClick="PopUpClose()" class="close">&times;</span>
-            <div class="popup-content">
-              <div class="popup-title text-center price">
-                <h1>Total:</h1>
-              </div>
-              <button class="checkout" onclick="checkout()">Checkout</button>
-            </div>
-            <div id="results"></div>
+          <div class="drop-content">
+            <a href="women_items.html">Women</a>
+            <a href="men_items.html">Men</a>
           </div>
+        </div>
+        <li class="nav-links"><a href="contact.html">Contact</a></li>
+        <li class="nav-links">
+          <a href="cart.html">
+            <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+          </a>
+        </li>
 
-          <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
-          <li class="nav-links"><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+        <li class="nav-links"><a href="sign-up.html">Sign up</a></li>
+        <li class="nav-links"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
 
-    <section class="container">
+    <section class="image-container">
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="assets/images/women-slider-(1).jpg" />

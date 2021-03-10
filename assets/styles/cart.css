@@ -1,0 +1,32 @@
+#cart-Products {
+  margin-top: 50%;
+}
+
+.card-cart h4 {
+  color: white;
+}
+.footer-bottom {
+  position: fixed;
+}
+
+.product-image img {
+  width: 20%;
+}
+
+/*  QUANITY */
+
+.quantity {
+  display: flex;
+}
+
+#stock {
+  width: 5%;
+  text-align: center;
+}
+
+.add,
+.sub {
+  background-color: #912f40;
+  padding: 10px;
+  font-size: 30px;
+}

@@ -1,12 +1,16 @@
 /* index */
 
-@media (max-width: 475px) and (min-width: 320px) {
+@media (max-width: 375px) and (min-width: 320px) {
+  .container {
+    margin-top: 190px;
+  }
   #navbar img {
     width: 38%;
   }
 
   .nav-link {
     display: block;
+    font-size: small;
   }
 
   #heading {
@@ -22,7 +26,8 @@
   }
 
   .about-pic {
-    width: 100vw;
+    width: 97vw;
+    margin: 5px;
   }
 
   /* landing */
@@ -56,19 +61,226 @@
   }
 
   .login-btn {
-    display: inline-flex;
+    display: inline;
+  }
+
+  .login-btn button {
+    display: block;
+  }
+
+  #footer-bottom {
+    width: 111vw;
   }
 
   .footer-layout ul {
     display: block;
+    padding-left: 0px;
   }
 
   .footer-column {
+    display: flex;
+
+    margin-inline: 0px;
+  }
+
+  /* LANDING */
+
+  #product-section {
+    display: block;
+  }
+
+  .products img {
+    height: 33vh;
+    width: 90vw;
+  }
+
+  /* WOMEN */
+  #products {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  /* MEN */
+  .mySlides img {
+    width: 112vw;
+  }
+
+  /* CONTACT */
+
+  .contact-form,
+  signup-form,
+  login-form {
+    display: block;
+    margin-top: 63%;
+    padding-block: 40px;
+    margin-left: 0px;
+    margin-right: -41px;
+  }
+  .contact-btn {
+    margin: 20px;
+    display: block;
+    padding: 0px;
+  }
+  /* LOGIN  */
+  .login-form {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+  /* navbar */
+  .container {
+    margin-top: 190px;
+  }
+  #navbar img {
+    width: 38%;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: small;
+  }
+
+  #navbar {
+    width: auto;
+    padding-right: 0px;
+  }
+
+  #navbar img {
+    width: 25%;
+  }
+
+  /* main */
+  .text h1 {
+    font-size: 85px;
+  }
+
+  #product-section {
+    display: block;
+  }
+
+  .products img {
+    height: 33vh;
+    width: 90vw;
+  }
+
+  #heading {
+    width: 116vw;
+  }
+
+  #footer-bottom {
+    width: 116vw;
+  }
+
+  /* index */
+  .form-container {
+    display: block;
+  }
+
+  .form-layout {
+    padding-left: 0px;
+    width: auto;
+  }
+
+  .landing-signup-form {
+    height: fit-content;
+  }
+
+  /* landing-login */
+  .landing-login-form {
+    height: fit-content;
+  }
+
+  .landing-login-info {
+    width: 100%;
+  }
+
+  .login-btn {
+    display: inline;
+  }
+
+  .login-btn button {
+    display: block;
+  }
+
+  #footer-bottom {
+    width: 111vw;
+  }
+  .footer-layout ul {
+    display: block;
+    padding-left: 0px;
+  }
+
+  .footer-column {
+    display: flex;
+    margin-inline: 0px;
+  }
+  .form-container {
+    display: block;
+  }
+  .form-layout {
+    padding-left: 0px;
+  }
+
+  /* header */
+  #heading {
+    width: 111vw;
+  }
+
+  /* women */
+  .mySlides img {
+    width: 112vw;
+  }
+
+  #products {
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  /* CONTACT */
+
+  .contact-form,
+  signup-form,
+  login-form {
+    display: block;
+    margin-top: 63%;
+    padding-block: 40px;
+    margin-left: 0px;
+    margin-right: -41px;
+  }
+  .contact-btn {
+    margin: 20px;
+    display: block;
+    padding: 0px;
+  }
+  /* LOGIN  */
+  .login-form {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 786px) and (min-width: 426px) {
+  .form-layout {
+    padding-left: 1px;
+  }
+
+  .landing-signup-form {
+    height: 95vh;
+  }
+
+  .landing-login-form {
+  }
+
+  .login-btn {
     display: contents;
-    text-align: center;
-    margin-inline: none;
-    text-transform: uppercase;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 5px;
   }
 }

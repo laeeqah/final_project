@@ -38,30 +38,25 @@ function clear() {
 
 // Locale Storage
 
-// Name and Password from the register-form
-let name = document.getElementById("username");
-let pw = document.getElementById("password");
+function logUser() {
+  // get cart from local storage
+  let login = JSON.parse(localStorage.getItem("login"));
+  // Make sure the cart from localstorage is valid
+  login ? login : (login = []);
 
-// storing input from register-form
-function store() {
-  localStorage.setItem("name", name.value);
-  localStorage.setItem("pw", pw.value);
-}
+  // Get data to search through
+  fetch("https://arcane-shelf-35923.herokuapp.com/list-records/")
+    .then((res) => res.json())
+    .then((data) => {
+      // Get selected item out of backend
+      let log_user = data.filter((reg) => {
+        return reg.username == username && reg.password == password;
+      });
 
-// check if stored data from register-form is equal to entered data in the   login-form
-function check() {
-  // stored data from the register-form
-  let storedName = localStorage.getItem("name");
-  let storedPw = localStorage.getItem("pw");
+      // Add item to cart
+      loginCount = login.push(log_user[0]);
 
-  // entered data from the login-form
-  let userName = document.getElementById("userName");
-  let userPw = document.getElementById("userPw");
-
-  // check if stored data from register-form is equal to data from login form
-  if (userName.value == storedName || userPw.value == storedPw) {
-    alert("ERROR");
-  } else {
-    alert("You are loged in.");
-  }
+      // put new cart back into local storage
+      localStorage.setItem("login", JSON.stringify(login));
+    });
 }

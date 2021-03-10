@@ -7,7 +7,7 @@
 function addProducts() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/list-products/", {
+  fetch("http://127.0.0.1:5000/list-women/", {
     method: "POST",
     body: JSON.stringify({
       p_name: inputs[0].value,

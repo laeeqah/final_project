@@ -134,10 +134,7 @@ function addToCart(id) {
 
       // Add item to cart
       productCount = cart.push(product[0]);
-      let selectItem = product[0];
-
-      let product_stuff = `
-      `;
+      // counter+=1
 
       // put new cart back into local storage
       localStorage.setItem("cart", JSON.stringify(cart));
