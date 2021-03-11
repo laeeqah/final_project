@@ -32,11 +32,11 @@ h3 {
 }
 
 /* STYLING SLIDE SHOW */
-.mySlides {
+.imgSlides {
   display: none;
 }
 
-.mySlides img {
+.imgSlides img {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -72,7 +72,7 @@ img {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.circle {
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -87,14 +87,14 @@ img {
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
+.next {
+  -webkit-animation-name: next;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
+  animation-name: next;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes next {
   from {
     opacity: 0.4;
   }
@@ -103,7 +103,7 @@ img {
   }
 }
 
-@keyframes fade {
+@keyframes next {
   from {
     opacity: 0.4;
   }
@@ -188,6 +188,14 @@ img {
   object-fit: cover;
 }
 
+/* ADD CART BUTTON */
+.cart {
+  background-color: #912f40;
+}
+
+.cart:hover {
+  background-color: #323332;
+}
 /* POPUP PRODUCT */
 
 .popup-btn {

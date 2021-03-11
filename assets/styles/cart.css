@@ -1,10 +1,15 @@
-#cart-Products {
-  margin-top: 50%;
+#cartProducts {
+  margin-top: 10%;
+}
+
+ol {
+  color: white;
 }
 
 .card-cart h4 {
   color: white;
 }
+
 .footer-bottom {
   position: fixed;
 }
@@ -13,20 +18,20 @@
   width: 20%;
 }
 
-/*  QUANITY */
+/* remove button */
 
-.quantity {
-  display: flex;
-}
-
-#stock {
-  width: 5%;
-  text-align: center;
-}
-
-.add,
-.sub {
+.remove {
   background-color: #912f40;
-  padding: 10px;
-  font-size: 30px;
+}
+
+.remove:hover {
+  background-color: #323332;
+}
+
+/* total */
+#total {
+  text-align: center;
+  font-size: xxx-large;
+  color: #912f40;
+  border: solid 3px #912f40;
 }

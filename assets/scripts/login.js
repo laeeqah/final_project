@@ -35,28 +35,3 @@ function logUser() {
 function clear() {
   document.getElementsByName("clear").value = "";
 }
-
-// Locale Storage
-
-function logUser() {
-  // get cart from local storage
-  let login = JSON.parse(localStorage.getItem("login"));
-  // Make sure the cart from localstorage is valid
-  login ? login : (login = []);
-
-  // Get data to search through
-  fetch("https://arcane-shelf-35923.herokuapp.com/list-records/")
-    .then((res) => res.json())
-    .then((data) => {
-      // Get selected item out of backend
-      let log_user = data.filter((reg) => {
-        return reg.username == username && reg.password == password;
-      });
-
-      // Add item to cart
-      loginCount = login.push(log_user[0]);
-
-      // put new cart back into local storage
-      localStorage.setItem("login", JSON.stringify(login));
-    });
-}

@@ -12,6 +12,9 @@ h3 {
   max-width: none;
 }
 
+#navbar{
+  z-index: 3000;
+}
 .navbar ul {
   display: flex;
   list-style: none;

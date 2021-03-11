@@ -13,8 +13,8 @@ function PopUpClose(id) {
 
 function showSlides() {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document.getElementsByClassName("imgSlides");
+  let dots = document.getElementsByClassName("circle");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }

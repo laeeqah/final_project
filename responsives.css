@@ -1,12 +1,13 @@
 /* index */
 
 @media (max-width: 375px) and (min-width: 320px) {
+  .fa-angle-up{
+    display: none;
+  }
   .container {
     margin-top: 190px;
   }
-  #navbar img {
-    width: 38%;
-  }
+ 
 
   .nav-link {
     display: block;
@@ -14,11 +15,26 @@
   }
 
   #heading {
-    width: 100vw;
+    width: 116vw;
   }
 
   .text h1 {
     font-size: 55px;
+  }
+
+  .text {
+    width: 50%;
+  }
+    /* landing */
+
+    
+  #navbar {
+    width: -webkit-fill-available;
+    padding-right: 0px;
+  }
+
+  #navbar img{
+    width: 90px;
   }
 
   #layout {
@@ -30,14 +46,10 @@
     margin: 5px;
   }
 
-  /* landing */
-  #navbar {
-    width: auto;
-    padding-right: 0px;
+  .products{
+    padding-inline: 0px;
   }
-  #navbar img {
-    width: 25%;
-  }
+
   .form-container {
     display: block;
   }
@@ -49,11 +61,15 @@
 
   .landing-signup-form {
     height: fit-content;
+    text-align: center;
+    width: 111vw;
   }
 
   /* landing-login */
   .landing-login-form {
     height: fit-content;
+    text-align: center;
+    width: 111vw;
   }
 
   .landing-login-info {
@@ -95,9 +111,14 @@
   }
 
   /* WOMEN */
+  .mySlides .text{
+    display: flex;
+    padding: 80px;
+  }
+
   #products {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .card {
@@ -105,10 +126,31 @@
   }
 
   /* MEN */
+  .slideshow-container{
+    margin-top: 171px;
+  }
   .mySlides img {
     width: 112vw;
   }
+  /* Cart */
+  .cartProduct{
+    display: block;
+  }
+  .card-cart ul{
+    margin-top: 190px;
+  }
 
+  .product-image img {
+    width: 100% !important;
+  }
+  .card-cart input {
+    width: 45% !important;
+  }
+
+  #total{
+    display: block;
+    margin-left: 45px;
+  }
   /* CONTACT */
 
   .contact-form,
@@ -158,6 +200,10 @@
   .text h1 {
     font-size: 85px;
   }
+  .text{
+    flex-wrap: none;
+    width: 100%;
+  }
 
   #product-section {
     display: block;
@@ -165,13 +211,10 @@
 
   .products img {
     height: 33vh;
-    width: 90vw;
+    width: 104vw !important;
   }
 
-  #heading {
-    width: 116vw;
-  }
-
+  /* footer */
   #footer-bottom {
     width: 116vw;
   }
@@ -186,6 +229,14 @@
     width: auto;
   }
 
+  /* women */
+
+  .slideshow-container{
+    margin-top: 171px;
+  }
+
+
+/* signup */
   .landing-signup-form {
     height: fit-content;
   }
@@ -228,7 +279,7 @@
 
   /* header */
   #heading {
-    width: 111vw;
+    width: 116vw;
   }
 
   /* women */
@@ -236,15 +287,41 @@
     width: 112vw;
   }
 
+  #layout{
+    display: block;
+  }
+
   #products {
     display: inline-block;
     margin-left: 70px;
   }
 
+  .about-pic{
+    width: 250px;
+  }
   .card {
     margin-top: 20px;
   }
 
+  /* CART */
+  .cartProduct{
+    display: block;
+  }
+  .card-cart ul{
+    margin-top: 190px;
+  }
+
+  .product-image img {
+    width: 100% !important;
+  }
+  .card-cart input {
+    width: 45% !important;
+  }
+
+  #total{
+    display: block;
+    margin-left: 45px;
+  }    
   /* CONTACT */
 
   .contact-form,
@@ -268,6 +345,10 @@
 }
 
 @media (max-width: 786px) and (min-width: 426px) {
+
+  .footer-layout ul{
+    display: block;
+  }
   .form-layout {
     padding-left: 1px;
   }
@@ -276,7 +357,15 @@
     height: 95vh;
   }
 
-  .landing-login-form {
+ /* Women */
+ .card h4{
+   text-align: center;
+   font-size: 13px;
+  }
+
+  #cartProducts{
+    display: flex ;
+    margin-bottom: 100px;
   }
 
   .login-btn {

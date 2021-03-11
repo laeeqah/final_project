@@ -23,11 +23,7 @@ function renderCart(products) {
                 <div class="product-info">
                     <h4>${product.name}</h4>
                     <h4>${product.price}</h4>
-                    <div class = "quantity">
-                        <div class = "add">+</div>
-                        <input id = "stock" type = "text" value="0" name = "Quantity">
-                        <div class = "sub">-</div>
-                    </div>
+                   
 
                     <button class = "remove" onclick="RemoveItem(${product.proid})">Remove</button>
                 </div>
@@ -43,6 +39,21 @@ function renderCart(products) {
 
 getCart();
 
+// CHECKOUT
+
+function checkoutbtn() {
+  let check = document.getElementById("checkout").innerHTML;
+  console.log(check);
+  alert(`Thanks for your purchase, Total${check}`);
+  let clear = "";
+  let x = document.getElementById("cartProducts");
+  x.innerHTML = clear;
+
+  document.getElementById("cartProduct").innerHTML = f;
+  window.location.href = "./index.html";
+}
+
+// REMOVE
 function RemoveItem(id) {
   let cart = JSON.parse(localStorage.getItem("cart"));
 
