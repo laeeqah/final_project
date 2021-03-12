@@ -7,6 +7,8 @@ function getCart() {
   renderCart(cart);
 }
 
+// ADD
+// add necessary information to the cart
 function renderCart(products) {
   let contentBox = document.getElementById("cartProducts");
   let total = 0;
@@ -30,6 +32,7 @@ function renderCart(products) {
             </ul>
         </div>`;
   });
+  // this will add the total amount of products together
   document.getElementById(
     "total"
   ).innerHTML = `<h4></h4> Your total is: R${total}</h4>`;
