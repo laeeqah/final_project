@@ -39,21 +39,8 @@ function renderCart(products) {
 
 getCart();
 
-// CHECKOUT
-
-function checkoutbtn() {
-  let check = document.getElementById("checkout").innerHTML;
-  console.log(check);
-  alert(`Thanks for your purchase, Total${check}`);
-  let clear = "";
-  let x = document.getElementById("cartProducts");
-  x.innerHTML = clear;
-
-  document.getElementById("cartProduct").innerHTML = f;
-  window.location.href = "./index.html";
-}
-
 // REMOVE
+// will remove once you press on remove button and manualy refresh.
 function RemoveItem(id) {
   let cart = JSON.parse(localStorage.getItem("cart"));
 

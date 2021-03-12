@@ -1,13 +1,12 @@
 /* index */
 
 @media (max-width: 375px) and (min-width: 320px) {
-  .fa-angle-up{
+  .fa-angle-up {
     display: none;
   }
   .container {
     margin-top: 190px;
   }
- 
 
   .nav-link {
     display: block;
@@ -25,15 +24,14 @@
   .text {
     width: 50%;
   }
-    /* landing */
+  /* landing */
 
-    
   #navbar {
     width: -webkit-fill-available;
     padding-right: 0px;
   }
 
-  #navbar img{
+  #navbar img {
     width: 90px;
   }
 
@@ -46,7 +44,7 @@
     margin: 5px;
   }
 
-  .products{
+  .products {
     padding-inline: 0px;
   }
 
@@ -111,7 +109,7 @@
   }
 
   /* WOMEN */
-  .mySlides .text{
+  .mySlides .text {
     display: flex;
     padding: 80px;
   }
@@ -126,17 +124,17 @@
   }
 
   /* MEN */
-  .slideshow-container{
+  .slideshow-container {
     margin-top: 171px;
   }
   .mySlides img {
     width: 112vw;
   }
   /* Cart */
-  .cartProduct{
+  .cartProduct {
     display: block;
   }
-  .card-cart ul{
+  .card-cart ul {
     margin-top: 190px;
   }
 
@@ -147,7 +145,7 @@
     width: 45% !important;
   }
 
-  #total{
+  #total {
     display: block;
     margin-left: 45px;
   }
@@ -200,7 +198,7 @@
   .text h1 {
     font-size: 85px;
   }
-  .text{
+  .text {
     flex-wrap: none;
     width: 100%;
   }
@@ -231,12 +229,11 @@
 
   /* women */
 
-  .slideshow-container{
+  .slideshow-container {
     margin-top: 171px;
   }
 
-
-/* signup */
+  /* signup */
   .landing-signup-form {
     height: fit-content;
   }
@@ -287,7 +284,7 @@
     width: 112vw;
   }
 
-  #layout{
+  #layout {
     display: block;
   }
 
@@ -296,7 +293,7 @@
     margin-left: 70px;
   }
 
-  .about-pic{
+  .about-pic {
     width: 250px;
   }
   .card {
@@ -304,10 +301,10 @@
   }
 
   /* CART */
-  .cartProduct{
+  .cartProduct {
     display: block;
   }
-  .card-cart ul{
+  .card-cart ul {
     margin-top: 190px;
   }
 
@@ -318,10 +315,10 @@
     width: 45% !important;
   }
 
-  #total{
+  #total {
     display: block;
     margin-left: 45px;
-  }    
+  }
   /* CONTACT */
 
   .contact-form,
@@ -345,8 +342,7 @@
 }
 
 @media (max-width: 786px) and (min-width: 426px) {
-
-  .footer-layout ul{
+  .footer-layout ul {
     display: block;
   }
   .form-layout {
@@ -357,14 +353,14 @@
     height: 95vh;
   }
 
- /* Women */
- .card h4{
-   text-align: center;
-   font-size: 13px;
+  /* Women */
+  .card h4 {
+    text-align: center;
+    font-size: 13px;
   }
 
-  #cartProducts{
-    display: flex ;
+  #cartProducts {
+    display: flex;
     margin-bottom: 100px;
   }
 
