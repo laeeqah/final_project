@@ -88,8 +88,6 @@ function productListed() {
 }
 
 productListed();
-// PopUpClose();
-// PopUpShow();
 
 let btn = document.getElementById("viewBtn");
 
@@ -134,7 +132,8 @@ function addToCart(id) {
 
       // Add item to cart
       productCount = cart.push(product[0]);
-      // counter+=1
+
+      alert("Item added to cart");
 
       // put new cart back into local storage
       localStorage.setItem("cart", JSON.stringify(cart));

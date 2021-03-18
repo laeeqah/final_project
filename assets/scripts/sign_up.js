@@ -20,6 +20,6 @@ function createUsers() {
       document.getElementById("signup-form").reset();
     });
 }
-function clear() {
+function reset() {
   document.getElementsByName("clear").value = "";
 }
