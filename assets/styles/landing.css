@@ -42,7 +42,8 @@ body {
     background-image: url("../images/landing-slider.jpg");
   }
   100% {
-    background-image: url("../images/landing-slider2.jpg");
+    background-image: url("../images/men-slider3.jpg");
+    object-fit: cover;
   }
 }
 
