@@ -1,4 +1,16 @@
-/* index */
+
+
+@media screen and (orientation:landscape)
+and (min-device-width: 319px) 
+and (max-device-width: 480px){
+  #products {
+    display: flex;
+    margin-left: 20px;
+  }
+  .card {
+    margin-top: 20px;
+  }
+}
 
 @media (max-width: 375px) and (min-width: 320px) {
   .fa-angle-up {
@@ -114,14 +126,7 @@
     padding: 80px;
   }
 
-  #products {
-    display: inline-block;
-    margin-left: 20px;
-  }
-
-  .card {
-    margin-top: 20px;
-  }
+  
 
   /* MEN */
   .slideshow-container {

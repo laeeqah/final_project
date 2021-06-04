@@ -133,7 +133,7 @@
   border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
-  height: 89vh;
+  height: 60vh;
   margin-top: 40px;
   border-radius: 50px;
 }
@@ -167,7 +167,7 @@
   border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
-  height: 89vh;
+  height: 60vh;
   margin-top: 40px;
   border-radius: 50px;
 }
@@ -181,7 +181,7 @@
 .login-btn {
   display: inline-flex;
 
-  padding: 100px 35px;
+  padding: 50px 20px;
 }
 
 .login-btn button:hover {
