@@ -188,8 +188,13 @@ img {
 .card {
   padding: 2%;
   flex-basis: 16%;
+<<<<<<< HEAD
   margin-right: 15px;
   margin-left: 15px;
+=======
+  margin-right: 5px;
+  margin-left: 5px;
+>>>>>>> 3105a01c48d635fd660dc32ce80b6197bad87aa0
 }
 
 .product-image img {

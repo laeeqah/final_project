@@ -133,7 +133,11 @@
   border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
+<<<<<<< HEAD
   height: 80vh;
+=======
+  height: 60vh;
+>>>>>>> 3105a01c48d635fd660dc32ce80b6197bad87aa0
   margin-top: 40px;
   border-radius: 50px;
 }
@@ -168,7 +172,11 @@
   border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
+<<<<<<< HEAD
   height: 80vh;
+=======
+  height: 60vh;
+>>>>>>> 3105a01c48d635fd660dc32ce80b6197bad87aa0
   margin-top: 40px;
   border-radius: 50px;
 }
