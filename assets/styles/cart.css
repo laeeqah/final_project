@@ -14,8 +14,14 @@ ol {
   position: fixed;
 }
 
+#cartProducts{
+ display: flex;
+ justify-content: space-evenly;
+}
+
 .product-image img {
-  width: 20%;
+  width: 30vw;
+  height: 90vh;
 }
 
 /* remove button */

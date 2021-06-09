@@ -100,6 +100,7 @@ button.onclick = function (event) {
 function searchProduct() {
   const searchForm = document.getElementById("search-form");
   const search = searchForm.getElementsByTagName("input")[0].value;
+  
 
   fetch("https://arcane-shelf-35923.herokuapp.com/list-women/")
     .then((response) => response.json())

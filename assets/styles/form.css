@@ -133,14 +133,15 @@
   border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
-  height: 89vh;
+  height: 80vh;
   margin-top: 40px;
   border-radius: 50px;
 }
 
 .landing-sign-info input {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
+  margin-top: 5px
 }
 
 .submit-btn {
@@ -167,21 +168,22 @@
   border-right: #912f40 solid 10px;
   background-color: #323332;
   padding: 40px;
-  height: 89vh;
+  height: 80vh;
   margin-top: 40px;
   border-radius: 50px;
 }
 
 .landing-login-info input {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   border: none;
+  margin-top: 30px
 }
 
 .login-btn {
   display: inline-flex;
 
-  padding: 100px 35px;
+  padding: 50px 20px;
 }
 
 .login-btn button:hover {
